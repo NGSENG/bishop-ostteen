@@ -1,0 +1,17 @@
+{
+    "deviceId": "td_00023",
+    "location": "Living Room",
+    "currentStatus": "OK",
+    "deviceClass" :  "Thermostat",
+    "readings": [
+		{
+			"dateTime": "2016-01-31T14:00:22Z",
+			"temperature": "65",
+			"temperatureFormat": "Fahrenheit"
+		},
+		{
+			"dateTime": "2016-01-31T13:00:22Z",
+			"temperature": "64",
+			"temperatureFormat": "Fahrenheit"
+		}]
+}

@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div ng-app="deviceManager" ng-controller="authController">
+    <div ng-if="error" class="alert alert-danger">
+        {{error}}
+    </div>
+    <div>
+        <h1>Enter your credentials</h1>
+        @*<div>The username is: admin.  The password is: Password1</div>*@
+        <div class="form-group">
+            <label for="userName">Username:</label>
+            <input id="userName" type="text" class="form-control" ng-model="userName"/>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input id="password" type="password" class="form-control" ng-model="password"/>
+        </div>
+        <button name="login" class="btn" type="button" ng-click="authenticate(userName, password)">Login</button>
+    </div>
+</div>

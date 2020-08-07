@@ -1,0 +1,12 @@
+{
+    "deviceId": "wld0C7002-1",
+    "isFaulted": false,
+    "faultCode": "",
+    "location": "Basement Laundry",
+    "readings": [
+        {
+            "timestamp": "2016-01-31T13:00:22Z",
+            "leakDetected": false
+        }
+    ]
+}

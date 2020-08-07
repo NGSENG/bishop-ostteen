@@ -1,0 +1,9 @@
+*.cache
+*.CopyComplete
+*.dll
+*.exe
+*.pdb
+*.user
+bin
+ob
+obj

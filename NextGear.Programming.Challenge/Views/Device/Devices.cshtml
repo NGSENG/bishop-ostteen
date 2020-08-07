@@ -1,0 +1,34 @@
+﻿<div ng-app="deviceManager" ng-controller="deviceController" ng-init="getAllDevices()">
+    <div ng-if="error" class="alert alert-danger">
+        {{error}}
+    </div>
+    <div ng-if="info" class="alert alert-success">
+        {{info}}
+    </div>
+    <h1>
+        Devices
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Device Id</th>
+                <th>Device Type</th>
+                <th>Device State</th>
+                <th>Name</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="device in devices">
+                <td>{{device.id}}</td>
+                <td>{{device.DeviceType}}</td>
+                <td>{{device.DeviceState}}</td>
+                <td>{{device.Name}}</td>
+                <td><button class="btn" type="button" ng-click="getDeviceById(device.id)">Get Device Readings</button></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+</div>
